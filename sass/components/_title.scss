@@ -1,0 +1,33 @@
+.section-title{
+    margin-bottom: 30px;
+
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+     color: var(--title-color);  
+}
+
+.greet-title {
+    margin-bottom: 20px;
+
+    @include font;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    }
+
+@media screen and (min-width:1200px) {
+.section-title{
+    margin-bottom: 50px;
+}
+
+.greet-title{
+    text-align: left;
+}
+}
+
+

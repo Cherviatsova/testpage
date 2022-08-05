@@ -1,0 +1,133 @@
+@media screen and (max-width:767px){
+    .resolution-container {
+         padding-top: 60px;
+         padding-bottom: 60px;
+        }
+
+.resolution-list__item:not(:last-child){
+    margin-bottom: 30px;
+}
+
+.resolution-list__box{
+    width: 450px;
+    padding: 25px 190px; 
+    background-color: #F5F4FA;
+    border-radius: 4px;
+}
+
+.resolution-list__title{
+    margin-top: 30px;
+
+    @include font;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    
+    color: var(--title-color);
+}
+
+.resolution-list__text{
+    margin-top: 10px;
+    
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: var(--main-text-color);
+}
+}
+
+
+@media screen and(min-width:768px) and(max-width:1199px) {
+    .resolution-container {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .resolution-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: -30px;
+        margin-left: -30px;
+
+
+        &__item {
+            margin-top: 30px;
+            margin-left: 30px;
+            width: 354px;
+            height: 251px;
+        }
+
+        &__box {
+            padding: 20px 142px;
+            margin-bottom: 30px;
+            background-color: #F5F4FA;
+            border-radius: 4px;
+        }
+
+        &__title {
+            margin-bottom: 10px;
+
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+
+            color: var(--title-color);
+        }
+
+        &__text {
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+
+            color: var(--main-text-color);
+        }
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .resolution-container {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+    .resolution-list {
+        display: flex;
+        flex-basis: calc((100% - 90px) / 4);
+
+
+        &__item:not(:last-child) {
+            margin-right: 30px;
+        }
+
+        &__box {
+            width: 270px;
+            padding: 25px 100px;
+            margin-bottom: 30px;
+            background-color: #F5F4FA;
+            border-radius: 4px;
+        }
+
+        &__title {
+            margin-bottom: 10px;
+
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+
+            color: var(--title-color);
+        }
+
+        &__text {
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+
+            color: var(--main-text-color);
+        }
+    }
+}
+
